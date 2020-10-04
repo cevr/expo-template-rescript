@@ -15,7 +15,7 @@ web-build/
 
 # ReScript
 /lib
-*.js
+src/**.js
 .bsb.lock
 .merlin
 *.gen.*
