@@ -1,5 +1,5 @@
 node_modules
-.expo/*
+.expo
 npm-debug.*
 *.jks
 *.p8
@@ -15,7 +15,7 @@ web-build/
 
 # ReScript
 /lib
-*.bs.js
+*.js
 .bsb.lock
 .merlin
 *.gen.*

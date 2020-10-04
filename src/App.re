@@ -1,27 +1,13 @@
 open ReactNative;
 
-let styles =
-  Style.(
-    StyleSheet.create({
-      "gradient": style(~flex=1., ()),
-      "container":
-        style(~flex=1., ~justifyContent=`center, ~alignItems=`center, ()),
-      "text":
-        style(~fontSize=22., ~color="rgb(209,62,62)", ~fontWeight=`_500, ()),
-    })
-  );
-
 [@react.component]
-let make = () => {
-  <Expo.LinearGradient
-    colors=[|"rgb(10, 13, 47)", "rgb(10, 13, 47)"|]
-    start=[|0.0, 1.0|]
-    _end=[|1.0, 0.0|]
-    style=styles##gradient>
-    <View style=styles##container>
-      <Text style=styles##text>
-        {React.string("Build something great! " ++ {j| 🤖|j})}
-      </Text>
+let make = () =>
+  <SafeAreaView style={Tw.make("h-full")}>
+    <View style={Tw.make("pt-12 items-center")}>
+      <View style={Tw.make("bg-blue-200 px-3 py-1 rounded-full")}>
+        <Text style={Tw.make("text-blue-800 font-semibold")}>
+          "Hello Tailwind"->React.string
+        </Text>
+      </View>
     </View>
-  </Expo.LinearGradient>;
-};
+  </SafeAreaView>;

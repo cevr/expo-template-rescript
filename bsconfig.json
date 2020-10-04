@@ -1,5 +1,5 @@
 {
-  "name": "expo-template-rescript",
+  "name": "@cvr/expo-template-rescript",
   "refmt": 3,
   "reason": {
     "react-jsx": 3
@@ -8,12 +8,19 @@
     "module": "es6",
     "in-source": true
   },
-  "suffix": ".bs.js",
+  "suffix": ".js",
   "sources": [
     {
       "dir": "src",
       "subdirs": true
     }
   ],
-  "bs-dependencies": ["reason-react", "reason-react-native", "reason-expo"]
+  "bs-dependencies": [
+    "reason-react",
+    "reason-react-native",
+    "reason-expo",
+    "re-classnames",
+    "reason-promise",
+    "re-tailwind-rn"
+  ]
 }
